@@ -1,3 +1,5 @@
 replication: true
 replicas: 1
-serviceType: NodePort
+serviceType: ClusterIP
+frontEndPort: 31428
+hostDomain: drupal.utahcounty.gov
