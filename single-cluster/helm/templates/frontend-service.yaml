@@ -6,9 +6,9 @@ metadata:
     app: guestbook
     tier: frontend
 spec:
+  type: "{{ .Values.serviceType }}"
   ports:
-    - port: {{ .Values.frontEndPort }}
-      protocol: TCP
+  - port: 80
   selector:
     app: guestbook
     tier: frontend
